@@ -1,11 +1,193 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    ini perubahan message alfa
-</body>
+    <style>
+      /* Latihan Grid CSS */
+      /* .container{
+      display: grid;
+      grid-template-areas: "header header"
+                            "aside main"
+                            "nav main"
+                            "footer footer";
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-rows: 1fr 1fr 1.3fr;
+      width: 600px;
+      margin: 50px auto;
+      border: 5px solid black;
+      box-sizing: border-box; 
+      padding: 5px;
+    }
+    
+    header{
+      grid-area: header;
+      text-align: center;
+      background-color: cyan;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    aside{
+      grid-area: aside;
+      background-color: bisque;
+      text-align: center;
+      padding: 60px 0;
+    }
+    
+    nav{
+      grid-area: nav;
+      background-color: darkorange;
+      text-align: center;
+      padding: 81px 0;
+    }
+    
+    main{
+      grid-area: main;
+      flex: 1.5;
+      background-color: salmon;
+      text-align: center;
+      padding: 150px 0;
+    }
+    
+    footer{
+      grid-area: footer;
+      background-color: rgb(66, 111, 111);
+      text-align: center;
+      padding: 20px 0;
+    } */
+
+      .container {
+        display: grid;
+        margin: 60px auto;
+        width: 600px;
+        border: 3px solid black;
+        box-sizing: border-box;
+        grid-template-areas:
+          "header header"
+          "nav main"
+          "aside main"
+          "footer footer";
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 80px 120px 120px 60px;
+      }
+
+      header,
+      main,
+      nav,
+      aside,
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header {
+        grid-area: header;
+        background-color: blue;
+      }
+
+      aside {
+        grid-area: aside;
+        background-color: burlywood;
+      }
+
+      nav {
+        grid-area: nav;
+        background-color: darkgreen;
+      }
+
+      main {
+        grid-area: main;
+        background-color: goldenrod;
+        line-height: 220px;
+      }
+
+      footer {
+        grid-area: footer;
+        background-color: deeppink;
+      }
+
+      /* container2 */
+      .container2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 8px;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .container3 {
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin: 10px auto;
+        /* grid property */
+        display: grid;
+        grid-template-columns: 100px 50px 20px;
+        grid-template-rows: 24px 80px 50px;
+        row-gap: 8px;
+        column-gap: 8px;
+      }
+      .item {
+        background-color: #ddd;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+       .item:nth-child(even){
+       background-color: brown;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <aside>Aside</aside>
+      <nav>Nav</nav>
+      <main>Main</main>
+      <footer>Footer</footer>
+    </div>
+
+    <hr />
+
+    <div class="container2">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+
+    <hr />
+
+    <div class="container3">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">6</div>
+    </div>
+  </body>
 </html>
